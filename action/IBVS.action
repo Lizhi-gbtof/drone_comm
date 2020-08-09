@@ -1,0 +1,16 @@
+# Define the goal
+geometry_msgs/Pose desired_pose
+float32 pix_err_ss
+uint32 timeout_ms
+---
+# Define the result
+uint32 exception
+uint32 duration_ms
+---
+# Define a feedback message
+uint32 exception
+geometry_msgs/Pose pose
+float32[6] cVc
+float32 pix_err
+uint32 nfeatures
+uint32 duration_ms
